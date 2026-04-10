@@ -1,10 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <title>KILEX</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>diviaxel</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background: linear-gradient(180deg, #000000, #0a0a0a);
+  overflow-x: hidden;
+}
+
+/* Фон */
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('https://i.postimg.cc/d7fSscXJ/IMG-6926.jpg') center/cover no-repeat;
+  filter: blur(20px) brightness(0.3);
+  z-index: -1;
+}
+
+/* Контейнер */
+.container {
+  padding: 40px 20px;
+}
+
+/* Фото */
+.avatar {
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255,255,255,0.2);
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 60px rgba(255,255,255,0.4);
+}
+
+/* Ник */
+h1 {
+  font-size: 42px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+/* Описание */
+.desc {
+  max-width: 600px;
+  margin: 20px auto;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+/* Кнопки */
+.links {
+  margin-top: 30px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px auto;
+  padding: 15px;
+  width: 260px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.btn img {
+  width: 20px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px white;
+}
+
+/* Анимация появления */
+.fade {
+  animation: fade 1.5s ease forwards;
+}
+
+@keyframes fade {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
 </head>
-<body style="background:black; color:white; text-align:center;">
-  <h1>KILEX 🔥</h1>
-  <p>Мой первый сайт</p>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container fade">
+
+<h1>DIVIAXEL</h1>
+
+<img class="avatar" src="https://i.postimg.cc/d7fSscXJ/IMG-6926.jpg">
+
+<div class="desc">
+diviaxel – Эмма Розенфельд (родилась 5 мая 2005 года). Музыкальный исполнитель и блогер пишущий музыку в жанре Rap. Родилась в городе Киев, а проживает в городе Берлин.
+</div>
+
+<div class="links">
+
+<a class="btn" href="https://open.spotify.com/artist/1gqnjQADJNQ1luWG6G01tj?si=5ZXAyPnCQpCfPRTXBv7tCw" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/174/174872.png">
+Spotify
+</a>
+
+<a class="btn" href="https://music.apple.com/us/artist/diviaxel/1769503691" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/831/831276.png">
+Apple Music
+</a>
+
+<a class="btn" href="https://music.yandex.ru/artist/22966313" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968804.png">
+Yandex Music
+</a>
+
+<a class="btn" href="https://vk.com/artist/diviaxel" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/145/145813.png">
+VK Music
+</a>
+
+<a class="btn" href="https://t.me/diviaxel" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+Telegram
+</a>
+
+<a class="btn" href="https://vk.ru/diviaxel" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/145/145813.png">
+VK
+</a>
+
+<a class="btn" href="https://www.tiktok.com/@diviaxel" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png">
+TikTok
+</a>
+
+<a class="btn" href="https://www.instagram.com/diviaxel" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+Instagram
+</a>
+
+</div>
+
+</div>
+
 </body>
 </html>
